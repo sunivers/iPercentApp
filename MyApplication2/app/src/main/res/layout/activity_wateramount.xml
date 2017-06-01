@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:onClick="OnHideKeyboard">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/Ma1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:padding="10dp"
+                        android:text="흡습 전"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black" />
+
+                    <EditText
+                        android:id="@+id/edit_Ma1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:hint="입력하세요."
+                        android:inputType="numberDecimal|numberSigned"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/Ma2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:padding="10dp"
+                        android:text="흡습 후"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black" />
+
+                    <EditText
+                        android:id="@+id/edit_Ma2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:hint="입력하세요."
+                        android:inputType="numberDecimal|numberSigned"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/Ta"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:padding="10dp"
+                        android:text="흡인가스온도"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black" />
+
+                    <EditText
+                        android:id="@+id/edit_Ta"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:hint="입력하세요."
+                        android:inputType="numberDecimal|numberSigned"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_WaterAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="sans-serif"
+                    android:text="수분량 : 0.00"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="normal|bold|italic" />
+
+                <Button
+                    android:id="@+id/btn_WaterAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:onClick="onBtnWaterAmount"
+                    android:text="수분량 구하기" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/Vm"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:padding="10dp"
+                        android:text="시료채취량"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black" />
+
+                    <EditText
+                        android:id="@+id/edit_Vm"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:hint="입력하세요."
+                        android:inputType="numberDecimal|numberSigned"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_AllofWater"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="sans-serif"
+                    android:text="물의 총량 : 0.00"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="normal|bold|italic" />
+
+                <Button
+                    android:id="@+id/btn_AllofWater"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:onClick="onBtnWaterAmount"
+                    android:text="물의 총량 구하기" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
